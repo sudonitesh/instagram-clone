@@ -1,0 +1,8 @@
+{
+    "editor.tabSize": 2,
+    "autoimport.useSemiColon": false,
+    "prettier.semi": false,
+    "yaml.format.singleQuote": true,
+    "javascript.preferences.quoteStyle": "single",
+    "prettier.singleQuote": true
+}
