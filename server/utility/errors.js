@@ -1,4 +1,4 @@
-export default (errors = {
+errors = {
     invalid_parameters:        [100, 'Invalid Parameters'],
     server_error:              [200, 'Server Error'],
     account_already_exist:     [300, 'Accound Already Exist'],
@@ -9,5 +9,6 @@ export default (errors = {
     invalid_tokn:              [800, 'Access with token is not authorised'],
     password_not_match:        [900, 'Password does not match with this account'],
     token_auth_failure:        [1500, 'Failed to authenticate token.']
-})
-  
+}
+
+module.exports = errors

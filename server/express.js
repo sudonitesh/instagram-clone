@@ -43,10 +43,10 @@ app.get('/test-server', (req, res) => {
 })
 
 // import routes
-// const userRouter = require('')
+const userRouter = require('./routes/user.router')
 
 // middleware to use routes
-// app.use('/user', userRouter)
+app.use('/api/user', userRouter)
 
 app.use((req, res, next) => { //this line is executing means no app.use middlewares above arre used
   const error = new Error('Not Found');

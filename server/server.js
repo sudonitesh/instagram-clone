@@ -4,7 +4,10 @@ const config = require('./config/config')
 const app = require('./express')
 
 // db connect
-mongoose.connect(config.mongoUri, { useNewUrlParser: true }, ()=> {
+mongoose.connect(config.mongoUri, {
+  useNewUrlParser: true,
+  useCreateIndex: true 
+  }, ()=> {
   console.log('[+] db connected')
 })
 mongoose.Promise = global.Promise

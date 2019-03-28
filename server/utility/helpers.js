@@ -1,5 +1,5 @@
-import errorCodes from './errors'
-import constants from './constants'
+const errorCodes = require('./errors')
+const constants = require('./constants')
 
 module.exports = {
   sendError: (res, err, error_index, status_code) => {
